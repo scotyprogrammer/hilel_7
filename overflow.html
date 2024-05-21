@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box_hidden {
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box_scroll {
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            overflow: scroll;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box_visible {
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            overflow: visible;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum aliquid molestiae, asperiores odio quo adipisci non delectus expedita explicabo exercitationem alias facilis incidunt beatae, similique et magnam, minus unde reprehenderit.
+    </div>
+
+    <div class="box_scroll">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum aliquid molestiae, asperiores odio quo adipisci non delectus expedita explicabo exercitationem alias facilis incidunt beatae, similique et magnam, minus unde reprehenderit.
+    </div>
+
+    <div class="box_visible">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum aliquid molestiae, asperiores odio quo adipisci non delectus expedita explicabo exercitationem alias facilis incidunt beatae, similique et magnam, minus unde reprehenderit.
+    </div>
+</body>
+</html>

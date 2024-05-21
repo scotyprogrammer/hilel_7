@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float clear</title>
+    <style>
+        .container {
+            margin: 40px;
+            padding: 40px;
+            background-color: antiquewhite;
+        }
+
+        .box {
+            margin: 10px;
+            height: 20px;
+            background-color: blueviolet;
+            float: left;
+        }
+
+        .box-right {
+            margin: 10px;
+            height: 20px;
+            background-color: lightcoral;
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .text {
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Первый бокс</div>
+        <div class="box">Второй бокс</div>
+        <div class="clear"></div>
+        <div class="text">Идёт после боксов так как отключено обтекание</div>
+    </div>
+
+    <div class="container">
+        <div class="box-right">Раз</div>
+        <div class="box-right">Два</div>
+        <div class="clear"></div>
+        <div class="box">Как видим третий переносится и прекращает обтекание</div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="container">
+        <div class="box-right">Раз</div>
+        <div class="box-right">Два</div>
+        <div class="box">А тут нормально слева и справа</div>
+    </div>
+</body>
+</html>
